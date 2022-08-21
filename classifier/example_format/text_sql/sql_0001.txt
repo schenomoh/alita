@@ -1,0 +1,9 @@
+with date_partitions as (
+  select dbms_xmlgen.getxmltype('select partition_name, high_value from ALL_TAB_PARTITIONS where table_name = ''XXXX'' ') as xml from dual
+)
+select x.*
+from date_partitions p,
+xmltable('/ROWSET/ROW' passing p.xml columns 
+    partition_name varchar2(30) path '/ROW/PARTITION_NAME',
+    high_value varchar2(30) path '/ROW/HIGH_VALUE') x
+where to_date(substr(x.high_value, instr(high_value, '''')+2, 19), 'yyyy-mm-dd hh24:mi:ss') <= sysdate-90

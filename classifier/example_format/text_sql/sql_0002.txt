@@ -1,0 +1,11 @@
+declare 
+ toto varchar(50);
+begin
+
+  select high_value into toto
+  from trai_table t
+  join all_tab_partitions atp
+  on t.table_dtm = atp.table_name
+  where rownum = 1;
+
+end;

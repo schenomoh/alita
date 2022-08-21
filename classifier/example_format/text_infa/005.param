@@ -1,0 +1,16 @@
+[Service:IntSvs_01]
+$PMSuccessEmailUser=pcadmin@mail.com
+$PMFailureEmailUser=pcadmin@mail.com
+[HET_TGTS.WF:wf_TCOMMIT_INST_ALIAS]
+$$platform=unix
+[HET_TGTS.WF:wf_TGTS_ASC_ORDR.ST:s_TGTS_ASC_ORDR]
+$$platform=unix
+$DBConnection_ora=Ora2
+$ParamAscOrderOverride=UPDATE T_SALES SET CUST_NAME = :TU.CUST_NAME, DATE_SHIPPED = :TU.DATE_SHIPPED, TOTAL_SALES = :TU.TOTAL_SALES WHERE CUST_ID = :TU.CUST_ID
+[ORDERS.WF:wf_PARAM_FILE.WT:WL_PARAM_Lvl_1]
+$$DT_WL_lvl_1=02/01/2005 01:05:11
+$$Double_WL_lvl_1=2.2
+[ORDERS.WF:wf_PARAM_FILE.WT:WL_PARAM_Lvl_1.WT:NWL_PARAM_Lvl_2]
+$$DT_WL_lvl_2=03/01/2005 01:01:01
+$$Int_WL_lvl_2=3
+$$String_WL_lvl_2=ccccc

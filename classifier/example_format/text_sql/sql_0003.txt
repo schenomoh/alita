@@ -1,0 +1,4 @@
+select mydate_local, 
+cast( (TO_TIMESTAMP_TZ(mydate_local, 'YYYY-MM-DD"T"HH24:MI:SSTZH:TZM')AT TIME ZONE  '+00:00') as date) mydate_utc
+from
+( select '2015-11-20T16:55:07+01:00' mydate_local from dual)

@@ -1,0 +1,13 @@
+select 
+ x.contract_id, x.EVT_VERSION_NUMBER, TMP_DJOUR
+from
+(
+  select
+  contract_id, EVT_VERSION_NUMBER, 
+  min(trunc(TRADE_DATE_TIME)) over (partition by contract_id order by EVT_VERSION_NUMBER rows between 0 preceding and 1 following) min_date,
+  max(trunc(TRADE_DATE_TIME)) over (partition by contract_id order by EVT_VERSION_NUMBER rows between 0 preceding and 1 following) max_date
+  from mydatatable a
+)x
+join calendar t
+  on jour between x.min_date and x.max_date-1
+  order by contract_id, EVT_VERSION_NUMBER, TMP_DJOUR
