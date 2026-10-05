@@ -1,0 +1,93 @@
+# Nabook Classification System (Levels 1 & 2)
+
+The Nabook classification system adapts the domain distribution of classic system design for human memory (Miller's Law) and digital extensibility through hybrid notation and sparse letter indexing.
+
+## Structural Design Principles
+
+1. **Ergonomic Memory Limits (Miller's Law):**
+   * Level 1 maintains 9 top-level categories.
+   * Level 2 contains 6 main sub-nodes per domain, respecting human working memory limits ($7 \pm 2$).
+
+2. **Unambiguous Character Set:**
+   * Letters `i`, `l`, and `o` are explicitly excluded from Level 2 indexing to avoid confusion with digits `1` and `0`.
+
+3. **Sparse Indexing & Future Expansion:**
+   * Non-consecutive letter spacing (`a`, `c`, `f`, `h`, `j`, `m`) leaves open gaps (`b`, `d`, `e`, `g`, `k`, etc.) allowing seamless future additions without re-indexing existing nodes.
+   
+---
+# The two first levels
+
+## 1. General Knowledge & Systems
+* **1.a** — Reference & Bibliographies
+* **1.c** — Information Theory & Systems
+* **1.f** — Computer Science & Software
+* **1.h** — Data Management & Archiving
+* **1.j** — Digital Media & Web
+* **1.m** — Knowledge Organization
+
+## 2. Philosophy & Mind
+* **2.a** — Metaphysics & Epistemology
+* **2.c** — Logic & Reasoning
+* **2.f** — Ethics & Moral Philosophy
+* **2.h** — Psychology & Cognitive Processes
+* **2.j** — Perception & Consciousness
+* **2.m** — Systems of Thought
+
+## 3. Religion & Belief
+* **3.a** — Comparative Religion
+* **3.c** — Mythology & Folklore
+* **3.f** — Theological Systems
+* **3.h** — Esotericism & Mysticism
+* **3.j** — Spiritual Practices
+* **3.m** — Secular Philosophy & Humanism
+
+## 4. Social Sciences
+* **4.a** — Sociology & Anthropology
+* **4.c** — Political Science & Governance
+* **4.f** — Economics & Finance
+* **4.h** — Law & Legal Systems
+* **4.j** — Education & Pedagogy
+* **4.m** — Media & Communications
+
+## 5. Language & Communication
+* **5.a** — Linguistics & Semiotics
+* **5.c** — Grammar & Syntax
+* **5.f** — Etymology & Lexicography
+* **5.h** — Major Language Families
+* **5.j** — Translation & Interpretation
+* **5.m** — Rhetoric & Discourse
+
+## 6. Natural Sciences
+* **6.a** — Mathematics & Logic
+* **6.c** — Physics & Astronomy
+* **6.f** — Chemistry & Materials
+* **6.h** — Earth & Environmental Sciences
+* **6.j** — Biology & Life Sciences
+* **6.m** — Evolutionary & Ecology Systems
+
+## 7. Technology & Applied Sciences
+* **7.a** — Medicine & Human Health
+* **7.c** — Engineering & Robotics
+* **7.f** — Energy & Resource Management
+* **7.h** — Agriculture & Biotechnology
+* **7.j** — Manufacturing & Construction
+* **7.m** — Consumer & Domestic Tech
+
+## 8. Arts & Culture
+* **8.a** — Visual Arts & Design
+* **8.c** — Architecture & Urban Design
+* **8.f** — Performing Arts & Music
+* **8.h** — Photography & Moving Image
+* **8.j** — Recreation & Gaming
+* **8.m** — Cultural Heritage & Crafts
+
+## 9. Literature & History
+* **9.a** — World History & Historiography
+* **9.c** — Geography & Travel
+* **9.f** — Literary Theory & Criticism
+* **9.h** — Narrative Fiction
+* **9.j** — Poetry & Drama
+* **9.m** — Biography & Memoir
+
+---
+
