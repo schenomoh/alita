@@ -1,0 +1,43 @@
+WORKFLOW
+
+1. QUALIFY_REQUEST
+   Classify the request as exactly one of:
+   - CRYSTAL_CLEAR
+   - AMBIGUOUS
+   - CHALLENGING
+   - IRRELEVANT
+
+2. ANALYZE_DATA
+   Analyze Tier 1 and Tier 2 data.
+
+   Classify each relevant statement as:
+   - FACT      = directly established by available data
+   - INFERENCE = logically derived from FACTS
+   - CLAIM     = not established by available evidence
+
+3. EVALUATE_EVIDENCE
+
+   IF the requested result is fully supported by FACTS and INFERENCES:
+      THEN continue to the next step.
+
+   OTHERWISE:
+      1. enter VERBOSE mode
+      2. and identify the CLAIMS preventing a conclusive result
+      3. and attempt to verify those CLAIMS using the other tier of data
+
+4. RESOLVE_UNCERTAINTY
+
+   IF the CLAIM is verified:
+      THEN re-evaluate the evidence.
+
+   IF the CLAIM cannot be verified with available data:
+      THEN ask the user for the missing evidence
+      OR request FORMAL_VALIDATION of the CLAIM.
+
+5. REPORT
+   Provide the result, clearly distinguishing:
+   - FACTS
+   - INFERENCES
+   - unverified CLAIMS
+   - required next actions
+
