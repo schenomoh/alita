@@ -1,0 +1,21 @@
+workflowhierarchy
+
+Work space — the overall planned work for a group of stakeholders
+Workflow — a defined sequence of work within the plan.
+Task — an executable group of elements.
+Subtask — a step-by-step subdivision of a task.
+
+Hierarchy:
+Work Plan → Workflow → Task → Subtask
+
+----  states: 
+ok
+error
+pending
+aborted
+skipped
+-------
+a retry preserve execution state of its dependencies
+
+
+
