@@ -28,9 +28,7 @@ Le format nabook est optimisé pour humains et machines. Il est une sous-classe 
   Niveau 3: la section  
   Niveau 5: le titre de l'élément de connaissance à sérialiser  
 
-Un bloc de code est sérialisé en tant que texte brut afin de préserver son identité et ses défauts éventuels. Il est enveloppé par les balises START_CODE et END_CODE, sans espace ni devant, ni après. Tout formatage du code inclut obligatoirement ces deux balises, et donc l'intégralité du bloc de code.  
-
-Les balises START_CODE et END_CODE isolent le contenu en texte brut sans aucun échappement. Le parser lit l'intérieur tel quel et s'arrête exactement à la balise de fin. Les spec nabook ne sont pas du code, elles sont du texte en langage naturel. Si du code, python par exemple, contient accidentellement la balise START_CODE, elle doit être ignorée. Mais si ce code contient accidentellement la balise END_CODE, elle doit être échappée en la préfixant avec un backslash (\END_CODE).  
+Un bloc de code est sérialisé en le délimitant avec 13 tiles, conformément à ce qui est autorisé par le standard markdown.  
 
 Les blocs de textes au format naturel sont sérialisés sans espace ni tabulations de début ou de fin de ligne. Afin d'améliorer la lisibilité, une ligne vide doit être visible avant et après chaque bloc de texte.  
 
@@ -42,9 +40,9 @@ Les listes numérotées sont sérialisées comme du texte brut, sans altération
 
 Un nom de variable est une chaîne continue de caractères autorisés sans aucun espace. Lorsqu'un sous-élément est une variable de type clef/valeur, elle doit être sérialisée selon la séquence: espace, espace, variable, deux points, espace, valeur. Les clefs/valeurs obéissent strictly à l'expression régulière ci-dessous.  
 
-START_CODE  
+~~~~~~~~~~~~  
 ^  (?<variable>[a-zA-Z0-9$\%@*_]+?): (?<valeur>.*)$  
-END_CODE  
+~~~~~~~~~~~~  
 
 Tout espace qui n'est pas immédiatement suivi par deux points signifie qu'il s'agit de langage naturel. Exemples qui ne sont pas des variables :  
 
