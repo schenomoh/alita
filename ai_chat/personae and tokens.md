@@ -1,7 +1,6 @@
-##### question
-I want to unerstand llm and what is behind the hood. So if i mention: you are a markdol specialist, il will change the token Probability distribution to its specialized semantic, right ?
+### role and token distribution
+> I want to unerstand llm and what is behind the hood. So if i mention: you are a markdol specialist, il will change the token Probability distribution to its specialized semantic, right ?
 
-##### answer
 Yes, Exactly. You Nailed the Mechanics.
 When you pass an instruction like "You are a markdown specialist," you are directly manipulating the model's latent space and altering its next-token probability distribution.
 Under the hood, a transformer does not "think"—it calculates high-dimensional vector math to predict the most statistically probable next token based on everything that came before it. Here is how that single sentence changes the engine's output:
@@ -17,3 +16,11 @@ By narrowing the semantic neighborhood, you reduce entropy. The model becomes fa
 The Takeaway
 Persona priming isn't just polite behavior conditioning—it is a mathematical adjustment of the probability curve. You are telling the transformer's attention heads which part of its massive multi-dimensional library to read from.
 Are you noticing a sharp difference in output quality when you switch from a generic prompt to a heavily specialized persona like a doc or an Arch?
+
+
+> Ok. So if i tell you are a chirurgien, you will pay more attention to word specialized to medecine. But if i tell you are an book editor, you might pay more attention to typographie ?
+
+Spot on. That is the exact mechanical consequence in action.
+ * "You are a chirurgien": You dramatically tilt the logit weights toward anatomical terminology, pharmacological agents, clinical syntax, and procedural precision. The attention heads prioritize medical entities and pathological contexts.
+ * "You are a book editor": You shift the probability distribution toward typography, punctuation rules, stylistic cadence, kerning/layout vocabulary, and syntactic flow.
+You are effectively steering the transformer's multi-head attention to amplify specific semantic dimensions in the latent space while gating out unrelated noise.
