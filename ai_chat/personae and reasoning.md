@@ -65,3 +65,83 @@ These are related but not interchangeable.
 For example, defining an agent as a senior cybersecurity auditor does not guarantee that it will verify evidence, distinguish facts from assumptions, or assess every relevant threat. Those behaviors should be specified in its reasoning policy or workflow.
 
 My recommendation: Treat persona as a reasoning bias and context-setting mechanism, not as a reliable control over reasoning. Put critical analytical requirements into explicit instructions, decision rules and validation steps.
+
+
+
+
+========
+Example: a 4-year-old child refuses to go to bed.
+
+### 1\. Different personae
+
+Same situation, different perspectives.
+
+![Why Do Kids Only Ask Life’s Biggest Questions at Bedtime? | by Worldcreator | Medium](https://images.openai.com/static-rsc-4/ySWvQsQMF7Pdz9f_SMkji1LDtBn2Uh1YWTVUNT7t_wlZ69L24gPGEQTo5o-oJTKBewdFg96DItDBFAI9AYbzz-3vaTZyf4yVK1dskDe_GnIL-DR5QNlyqCDjGEvGZe4dMQ7YUO3IOJe2lXJ8H3kwSIFCPFioMJIkv7MrAP3gLOAxNSRzGgvm3jlPomVvsQip?purpose=fullsize)
+
+Persona A: Tired parent
+
+Priority: Get the child to sleep quickly.
+
+Reasoning: “It's late, everyone's exhausted, and tomorrow is a school day. I need a solution that works tonight.”
+
+Likely response: Establish a firm limit, reduce discussion, and follow the bedtime routine.
+
+![Psicólogo infantil para niños de 3 años: señales, terapia y apoyo a las familias](https://images.openai.com/static-rsc-4/-D5SmVFyJbxmMb0UijrCKt-Ye_UgYxK6AnniIC9TFKrQBLx6ItkyMK6PcOXVxD1W6iq5Gjq4nZeD9Q6nn_Z9qGI90zn3NbbJXnY_T6R2qfxMTGOrum9CZwTBUpvEOVtLZ086ZGTANUwDGFTPEJEWoYgzAA1-bnkd-ZMoSSEWS4f9kkmk3kD9ps-WhQoRfFGp?purpose=fullsize)
+
+Persona B: Child psychologist
+
+Priority: Understand the child's behavior and emotional needs.
+
+Reasoning: “Is the child anxious, overstimulated, seeking attention, or struggling with separation?”
+
+Likely response: Explore possible causes, validate feelings, and suggest an appropriate bedtime strategy.
+
+The persona influences which aspects of the situation the AI pays attention to and which solutions it considers relevant.
+
+### 2\. Different reasoning policies
+
+Now keep the persona constant: a child psychologist.
+
+Change only the reasoning policy.
+
+Policy A
+
+Find the underlying cause
+
+* Identify possible explanations for the refusal.
+
+* Gather information that distinguishes between them.
+
+* Recommend a response adapted to the likely cause.
+
+Result: The AI asks whether this behavior is new, whether the child seems afraid, and what happens at bedtime.
+
+Policy B
+
+Recommend a practical intervention
+
+* Identify the immediate problem.
+
+* Select a simple, age-appropriate intervention.
+
+* Explain how to apply it tonight.
+
+* Define when to reconsider the approach.
+
+Result: The AI recommends a predictable routine, limited choices, and a calm, consistent boundary.
+
+Both agents have the same persona and domain knowledge. Their reasoning differs because their instructions specify different analytical procedures and objectives.
+
+### 3\. The distinction in one table
+
+|            | Persona                               | Reasoning policy                                       |
+| ---------- | ------------------------------------- | ------------------------------------------------------ |
+| Defines    | Perspective and priorities            | Analytical method                                      |
+| Answers    | “How should I approach this?”         | “How should I solve this?”                             |
+| Influences | Attention, interpretation, priorities | Steps, evidence checks, decision criteria              |
+| Example    | Child psychologist                    | Investigate causes before recommending an intervention |
+
+Key takeaway: A tired-parent persona might prioritize immediate relief; a child-psychologist persona might prioritize understanding the child's behavior. A reasoning policy determines how either persona gets from the situation to a recommendation.
+
+The distinction is not absolute: a persona can include behavioral rules, and a reasoning policy can encode priorities. For reliable agent design, however, separating them makes each easier to define and test.
+
