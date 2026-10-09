@@ -29,15 +29,16 @@ You are effectively steering the transformer's multi-head attention to amplify s
 ##### The Case of the Playroom Meltdown
 The Ambiguous Context
 > "The noise level is hitting maximum capacity, the kids are feeding off each other's energy, and someone is about to burst into tears."
-> 
+
 Persona 1: The Tired Parent
  * Main Focus: Surviving the moment, keeping the peace, and protecting your own sanity.
  * Primary Keywords Caught: noise, level, energy, tears.
-Persona 2: The Child Psychologist
+
+Persona 2: The Child Psychologist (Child SME)
  * Main Focus: Understanding children's emotions, sensory overload, and behavior triggers.
  * Primary Keywords Caught: capacity, feeding, off, burst.
-A Subject Matter Expert's Take on Attention
-Look, when we build these models, people think they "understand" text the way humans do. They don't. At its core, a transformer is just a massive statistical engine calculating probabilities across a high-dimensional vector space.
+
+A Subject Matter Expert's Take on Attention Look, when we build these models, people think they "understand" text the way humans do. They don't. At its core, a transformer is just a massive statistical engine calculating probabilities across a high-dimensional vector space.
 The attention mechanism is essentially a dynamic routing switch. Without a persona, the model floats in a sea of ambiguity because those words can map to a dozen different semantic clusters. But the moment you inject a role, you tilt the probability landscape. You are shifting the underlying query vectors, forcing the attention heads to amplify the logits for specific domain terminology while suppressing everything else as noise.
 The text is static, but the math isn't. Attention is simply the mechanism that bends the latent space so the model computes an entirely different reality from the exact same bytes.
 
