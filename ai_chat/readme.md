@@ -8,7 +8,15 @@
    * Usual name variations: User Prompt, User Input, End-User Message, Dynamic Payload, Runtime Query, Client Request.
 High-Impact AI Agent Personae
 
-##### High impact role
+### Personae
+##### Personae
+ * Persona priming directly manipulates the transformer's latent space, shifting the context vector and narrowing the semantic search neighborhood.
+ * It alters the next-token probability distribution by boosting logit scores for domain-specific tokens while penalizing unrelated conversational text.
+ * Attention heads dynamically re-weight incoming instructions, aligning the model with specialized heuristic pathways (e.g., structural markup or systems architecture).
+ * This mathematical adjustment reduces output entropy, increasing deterministic adherence to strict output schemas and formatting constraints.
+ * Ultimately, structured persona injection acts as a high-level programmatic constraint, replacing ambiguous conversational drift with tightly bounded predictive behavior.
+
+### High impact role
  * SecOps (Security Operations Engineer)
    * Role: Vulnerability scanning, prompt injection defense, red-teaming, and policy enforcement.
  * Architect (Solutions Architect / Systems Engineer)
