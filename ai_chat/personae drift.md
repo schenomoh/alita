@@ -32,16 +32,19 @@ How would you like to structure this indicator—would you prefer it as a visibl
 ### formating output 
 
 x Conclusion: ipsum dolores sum
+mode: verbosity: 20%, accuracy: 80%, drift 40%
+status: accepted
 ----
-- point 1
-- point 2
-- point 3
+- fact
+- inference
+- inference
 ..
 ---
 Next step
->> option 1
->> option 2
+>> action 1
+>> action 2
 ...
+
 
 
 
