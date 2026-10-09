@@ -30,7 +30,7 @@ Beyond a self-reporting indicator, you can structurally anchor the persona so it
 How would you like to structure this indicator—would you prefer it as a visible tag for your own debugging, or a silent internal check the model performs before formatting its reply?
 
 ### formating output 
-
+```
 x Conclusion: ipsum dolores sum
 mode: verbosity: 20%, accuracy: 80%, drift 40%
 status: accepted
@@ -44,7 +44,7 @@ Next step
 >> action 1
 >> action 2
 ...
-
+```
 
 
 
