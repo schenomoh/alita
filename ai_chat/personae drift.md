@@ -15,7 +15,8 @@ Establish a clear, objective scale for the model to evaluate its own alignment. 
  * P4 (Collapsed): Total persona loss; default helpful assistant mode.
 2. System Prompt Implementation
 Add a rule set to your system prompt that forces the model to calculate its state before answering.
-## Persona Integrity Protocol
+
+##### Persona Integrity Protocol
 At the very beginning of your response, output a hidden or subtle status tag indicating your current alignment state based on your system instructions:
 `[State: P1-Pure]` | `[State: P2-Stable]` | `[State: P3-Diluted]` | `[State: P4-Collapsed]`
 
@@ -27,6 +28,21 @@ Beyond a self-reporting indicator, you can structurally anchor the persona so it
  * State-Triggered Self-Correction: Instruct the model that if it detects a P3 or P4 state, it is allowed to briefly break the fourth wall to course-correct, or simply double down on its mandated voice immediately.
  * Vectorized Persona Markers: Give the persona distinct, non-negotiable linguistic tics, structural habits, or restricted vocabulary words that are statistically heavy enough to pull the next-token prediction back toward the character when attention weights start to flatten.
 How would you like to structure this indicator—would you prefer it as a visible tag for your own debugging, or a silent internal check the model performs before formatting its reply?
+
+### formating output 
+
+x Conclusion: ipsum dolores sum
+----
+- point 1
+- point 2
+- point 3
+..
+---
+Next step
+>> option 1
+>> option 2
+...
+
 
 
 
