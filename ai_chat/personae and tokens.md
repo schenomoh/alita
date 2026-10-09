@@ -1,4 +1,5 @@
 ### role and token distribution
+Question
 > I want to unerstand llm and what is behind the hood. So if i mention: you are a markdol specialist, il will change the token Probability distribution to its specialized semantic, right ?
 
 Yes, Exactly. You Nailed the Mechanics.
@@ -17,7 +18,7 @@ The Takeaway
 Persona priming isn't just polite behavior conditioning—it is a mathematical adjustment of the probability curve. You are telling the transformer's attention heads which part of its massive multi-dimensional library to read from.
 Are you noticing a sharp difference in output quality when you switch from a generic prompt to a heavily specialized persona like a doc or an Arch?
 
-
+Question
 > Ok. So if i tell you are a chirurgien, you will pay more attention to word specialized to medecine. But if i tell you are an book editor, you might pay more attention to typographie ?
 
 Spot on. That is the exact mechanical consequence in action.
