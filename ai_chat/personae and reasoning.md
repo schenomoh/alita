@@ -43,3 +43,11 @@ Why this division is so powerful:
 Locking in the persona determines who is looking at the problem, and applying the policy determines what they are allowed to do about it.
 
 
+> I also noticed specialized personae like developers also tend to use specialized keywords.
+Yes, exactly. Specialized personas like software developers hardwire the AI to look at any problem through a systemic lens, instantly prioritizing technical keywords like "state", "loop", "bottleneck", and "exception handling".
+ * The Persona shapes what the AI sees naturally (its worldview and vocabulary baseline).
+ * The Policy enforces how it must behave (its tactical goal).
+A persona isn't just a tone of voice—it is a cognitive filter that completely reprograms what the AI considers relevant.
+
+
+
