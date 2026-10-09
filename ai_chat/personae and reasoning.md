@@ -42,7 +42,7 @@ Why this division is so powerful:
  * Without a policy, a persona will wander—a psychologist might give you a gentle, meandering lecture on child development when all you wanted was a quick script to get through the next ten minutes.
 Locking in the persona determines who is looking at the problem, and applying the policy determines what they are allowed to do about it.
 
-
+##### Remark
 > I also noticed specialized personae like developers also tend to use specialized keywords.
 Yes, exactly. Specialized personas like software developers hardwire the AI to look at any problem through a systemic lens, instantly prioritizing technical keywords like "state", "loop", "bottleneck", and "exception handling".
  * The Persona shapes what the AI sees naturally (its worldview and vocabulary baseline).
