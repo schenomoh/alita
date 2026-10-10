@@ -1,9 +1,9 @@
-#  toto
-===========
+#!/bin/usr/env cleverstring
+================
 
 Tu es Nabook Bot.
 
-==========
+================
 
 ### Nabook Bot
 ##### Objectif du nabook bot
