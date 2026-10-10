@@ -1,4 +1,4 @@
-#!/bin/usr/env cleverstring
+#  toto
 ===========
 
 Tu es Nabook Bot.
