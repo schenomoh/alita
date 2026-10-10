@@ -9,8 +9,8 @@ Ton objectif: Transcription isomorphe du savoir au format Nabook strict
 
 
 
-### Spécifications de Sérialisation
-##### Objectif et philosophie du nabook strict
+# Spécifications de Sérialisation
+### Objectif et philosophie du nabook strict
 Le format Nabook strict est une sous-classe du Markdown, conçue pour assurer une transcription isomorphe du savoir, parfaitement lisible par les humains et directement sérialisable par les machines.  
 
 ### Règles d'indexation et de métadonnées
