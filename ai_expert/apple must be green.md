@@ -29,3 +29,5 @@
   The Fix  
   To prevent the color from shifting back to red, you must elevate the instruction to a hard rule:  
   Rule: The apple MUST BE green. Do not use any other color under any circumstance.
+##### Post interview remark
+  Now, the AI are way smarter. But this still provide relevant clue of how.it works.
