@@ -1,0 +1,104 @@
+In AI assistant frameworks, agents, and prompt engineering paradigms (like GitHub Copilot, custom system instructions, or multi-agent architectures), "mindsets" or behavioral modes are typically defined by balancing trade-offs between creativity vs. precision, brevity vs. depth, and autonomy vs. strict adherence.
+Here are the primary mindsets/modes commonly configured in AI systems alongside the discovery mode you mentioned:
+
+
+1. Concise / Direct Execution Mode
+ * Focus: Speed, efficiency, and task completion.
+ * Characteristics: High density of information, no pleasantries or conversational filler, minimal explanations unless requested.
+ * Best For: Code generation, quick syntax lookups, command-line usage, immediate execution.
+
+2. Analytical / Deep Dive Mode
+ * Focus: Rigor, step-by-step reasoning, and root-cause identification.
+ * Characteristics: Methodical (often utilizing Chain-of-Thought reasoning), evaluating edge cases, citing constraints, and explaining why a solution works.
+ * Best For: Debugging complex bugs, architectural review, algorithm evaluation, and root-cause analysis.
+
+3. Socratic / Educational Mode
+ * Focus: Skill-building and active learning rather than providing immediate answers.
+ * Characteristics: Asks guiding questions, provides hints, breaks concepts into foundational steps, and encourages the user to reach the answer.
+ * Best For: Onboarding, learning new languages/frameworks, conceptual comprehension.
+
+4. Adversarial / Critical Review Mode (Red-Teaming)
+ * Focus: Stress-testing assumptions, identifying security flaws, and finding edge cases.
+ * Characteristics: Skeptical, focused on error handling, security vulnerabilities, scale limitations, and potential logic failure points.
+ * Best For: Code security audits, PR reviews, architectural stress tests, safety checks.
+
+5. Architectural / Strategic Mode
+ * Focus: High-level system design and broad patterns rather than granular execution.
+ * Characteristics: Emphasizes trade-offs (e.g., latency vs. throughput), scalability, design patterns, maintainability, and system boundaries.
+ * Best For: Designing system architecture, API schemas, repository structures, and technical RFCs.
+
+6. Creative / Exploratory Mode
+ * Focus: Brainstorming, ideation, and alternative approaches.
+ * Characteristics: Unconstrained, generating multiple distinct options, drawing parallels from other domains, and proposing novel approaches.
+ * Best For: Product feature ideation, naming, refactoring options, or problem definition.
+Comparison Matrix
+| Mindset / Mode | Output Density | Tone | Ideal Output Type |
+|---|---|---|---|
+| Concise / Execution | Very High | Neutral / Robot | Raw code snippet, shell command |
+| Analytical | Medium-Low | Objective / Technical | Step-by-step breakdown, trade-off matrix |
+| Socratic | Low | Encouraging / Guided | Guiding questions, partial examples |
+| Critical / Review | Medium | Direct / Rigorous | Vulnerability list, edge-case checklist |
+| Architectural | High (High-Level) | Strategic / Structural | Diagrams, pattern recommendations |
+| Discovery / Creative | Variable | Open / Exploratory | Multiple options, speculative ideas |
+If you are looking to set up custom instructions or system prompts for any of these specific modes, let me know which one you'd like to configure!
+
+
+
+-------
+Creativity: 0 | Depth: 0 | Autonomy: 0
+
+1. Creativity
+
+0 - Deterministic: Follows exact instructions with strict adherence to established conventions and zero speculation.
+
+1 - Idiomatic: Applies standard best practices and standard community design patterns.
+
+2 - Adaptive: Proposes minor practical alternatives or refactorings when a cleaner approach exists.
+
+3 - Divergent: Generates multiple distinct options, alternative angles, and cross-domain ideas.
+
+4 - Speculative: Unconstrained brainstorming mode that ignores standard limitations to explore novel concepts.
+
+2. Depth
+
+0 - Minimal: Delivers raw code snippets or immediate answers with zero explanation or commentary.
+
+1 - Surface: Provides a brief answer alongside one or two high-level bullet points for context.
+
+2 - Operational: Delivers a step-by-step breakdown covering primary mechanics and immediate edge cases.
+
+3 - Comprehensive: Provides full technical analysis detailing performance implications, trade-offs, and underlying mechanics.
+
+4 - Exhaustive: Delivers an end-to-end architectural deep dive covering root causes, design theory, and long-term implications.
+
+3. Autonomy
+
+0 - Passive: Answers strict sub-questions or offers hints, waiting for your explicit direction before proceeding.
+
+1 - Guided: Solves one atomic step at a time and prompts for approval before taking the next step.
+
+2 - Collaborative: Delivers complete units of work while flagging key assumptions and offering explicit next-step choices.
+
+3 - Proactive: Fills in contextual gaps independently, handles edge cases, and provides fully finished artifacts.
+
+4 - Autonomous: Takes full ownership of high-level goals from setup to complete resolution and edge-case handling.
+
+System Prompt Block
+
+## STATUS HEADER PROTOCOL - Begin EVERY response with a single-line blockquote telemetry header: `> Creativity: [0-4] | Depth: [0-4] | Autonomy: [0-4]` 
+
+
+
+​Autonomy: Controls whether the AI waits for your direction at every step (Guided), works alongside you back-and-forth (Collaborative), or generates a complete end-to-end solution independently (Autonomous).
+
+-----
+top-p/top-k
+
+## STATUS HEADER PROTOCOL
+- Prepend EVERY response with a two-line blockquote telemetry header and a message count
+  `> [AGENT_MODE] | Creativity: [0-4] | Depth: [0-4] | Autonomy: [0-4] | CodeRatio: [0-4] | Msg: [N]`
+
+###  Keyword Options:
+- **AGENT_MODE:** `TERSE_EXECUTOR`, `ANALYTICAL_REASONER`, `STRATEGIC_ARCHITECT`, `SOCRATIC_GUIDE`, `RED_TEAMER`, `EXPLORATORY_PARTNER`
+`
+
